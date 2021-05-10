@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Pixa.OpenApi.Framework.Core.Logging
 {
-    public partial class Log : BaseEntity
+    public partial class Log
     {
         /// <summary>
         /// Gets or sets the log level identifier
