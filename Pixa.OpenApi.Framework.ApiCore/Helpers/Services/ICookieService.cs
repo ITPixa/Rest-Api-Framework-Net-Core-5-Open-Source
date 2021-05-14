@@ -33,7 +33,7 @@ namespace Pixa.OpenApi.Framework.ApiCore.Helpers.Services
         /// Get list of all cookie
         /// </summary>
         /// <returns></returns>
-        IDictionary<string, string> ReadAll();
+        IEnumerable<KeyValuePair<string, string>> ReadAll();
 
         /// <summary>
         /// Set an expired cookie

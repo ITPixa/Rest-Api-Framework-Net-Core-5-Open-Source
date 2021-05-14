@@ -36,18 +36,9 @@ namespace Pixa.OpenApi.Framework.ApiCore.Helpers.Services
             return result;
         }
 
-        public IDictionary<string, string> ReadAll()
+        public IEnumerable<KeyValuePair<string, string>> ReadAll()
         {
-            IDictionary<string, string> _cookies = new Dictionary<string, string>();
-            if (_httpContextAccessor.HttpContext != null && _httpContextAccessor.HttpContext.Request != null
-                            && _httpContextAccessor.HttpContext.Request.Cookies != null)
-            {
-                foreach (var key in _httpContextAccessor.HttpContext.Request.Cookies.Keys)
-                {
-                    _cookies.Add(new KeyValuePair<string, string>(key, Read(key)));
-                }
-            }
-            return _cookies;
+            return _httpContextAccessor.HttpContext.Request.Cookies;
         }
 
         public void Write(string key, string value, string domain, int expiryDays, bool isSecure)
