@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixa.OpenApi.Framework.ApiCore", "Pixa.OpenApi.Framework.ApiCore\Pixa.OpenApi.Framework.ApiCore.csproj", "{A445CFDF-FF75-4B87-B404-5427CB29C87A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pixa.OpenApi.Framework.ApiCore", "Pixa.OpenApi.Framework.ApiCore\Pixa.OpenApi.Framework.ApiCore.csproj", "{A445CFDF-FF75-4B87-B404-5427CB29C87A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixa.OpenApi.Framework.Core", "Pixa.OpenApi.Framework.Core\Pixa.OpenApi.Framework.Core.csproj", "{BA564777-F4EB-418A-8F08-29EBFC3C6E03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pixa.OpenApi.Framework.Core", "Pixa.OpenApi.Framework.Core\Pixa.OpenApi.Framework.Core.csproj", "{BA564777-F4EB-418A-8F08-29EBFC3C6E03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestClient", "TestClient", "{BA97A17D-07C3-46E0-9AAA-1B5A59076637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixa.OpenApi.Framework.ClientApi", "FrameworkClientCode\Pixa.OpenApi.Framework.ClientApi\Pixa.OpenApi.Framework.ClientApi.csproj", "{82DB832E-C459-459A-8F8D-15D77E505D27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,16 @@ Global
 		{BA564777-F4EB-418A-8F08-29EBFC3C6E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA564777-F4EB-418A-8F08-29EBFC3C6E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA564777-F4EB-418A-8F08-29EBFC3C6E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DB832E-C459-459A-8F8D-15D77E505D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DB832E-C459-459A-8F8D-15D77E505D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DB832E-C459-459A-8F8D-15D77E505D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DB832E-C459-459A-8F8D-15D77E505D27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82DB832E-C459-459A-8F8D-15D77E505D27} = {BA97A17D-07C3-46E0-9AAA-1B5A59076637}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51197CF1-70B1-49F2-9F00-5E89F3E48C0F}
